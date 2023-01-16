@@ -1,15 +1,34 @@
-    
-    
     @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+    
+    .testing{
+        height: 200px;
+        background-color:rgb(255, 244, 185);
+        margin-bottom: 20px!important;
+    }
+
+    #dark_mode{
+        margin: 10px;
+        border-radius: 0;
+        border-color: black;
+        background-color: transparent;
+        font-family: Inconsolata, sans-serif;
+        font-size: 20px;
+    }
+
+    #dark_mode:hover{
+        background-color: black;
+        color: rgb(255, 244, 185);
+        
+    }
+
     body{
         font-family: Inconsolata, sans-serif;
         background-color: #f8fafd;
-        padding: 40px;
+        padding: 20px;
     }
     
     h1{
         font-size: 36px;
-        margin-bottom: 10px;
     }
 
     h2{
@@ -20,21 +39,24 @@
         margin-top: 5px;
     }
 
+    li{
+        margin-top: 15px;
+    }
+
+    p{
+        line-height: 1.5;
+    }
+
     .container{
         max-width: 1000px;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .cv{
         border-color: black;
         border-style: solid;
         border-width: 10px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-
-    section{
-        padding: 20px 40px;
+        padding: 40px;
     }
 
     header{
@@ -42,7 +64,6 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding: 20px 40px 0px 40px;
     }
 
     header div:first-child {
@@ -51,18 +72,21 @@
     }
 
     .profile-picture{
-        margin-bottom: 0px;
         width: 90%;
         max-width: 400px;
+        margin: 20px;
     }
 
-    .media_container{
+    #billbyte_title, #personal_data, #media{
+        margin: 20px;
+    }
+
+    #media{
         display: flex;
         justify-content: left;
-        padding-top: 20px;
     }
 
-    .media{
+    #github, #linkedin, #twitter{
         padding-right: 20px;
         width: 50px;
         height: 50px;
@@ -74,11 +98,9 @@
         padding-left: 0px;
         margin-bottom: 0px;
     }
-
-    li{
-        margin-top: 15px;
-    }
-
-    p{
-        line-height: 1.5;
+    
+    @media only screen and (max-width: 900px){
+        .cv{
+            padding: 20px;
+        }
     }

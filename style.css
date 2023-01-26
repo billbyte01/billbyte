@@ -3,7 +3,7 @@
     .testing{
         height: 200px;
         background-color:rgb(255, 244, 185);
-        margin-bottom: 20px!important;
+        margin-bottom: 5px!important;
     }
 
     #dark_mode{
@@ -27,80 +27,95 @@
         padding: 20px;
     }
     
-    h1{
-        font-size: 36px;
-    }
+    h1{font-size: 44px;}
 
-    h2{
-        font-size: 28px;
-    }
+    h2{font-size: 28px;}
 
-    h3{
-        margin-top: 5px;
-    }
+    h3{margin-top: 5px;}
 
-    li{
-        margin-top: 15px;
-    }
+    li{margin-top: 15px; font-size: 14px;}
 
-    p{
-        line-height: 1.5;
-    }
+    p{font-size: 14px; line-height: 1.5;}
+
+    span{font-size: 14px;}
 
     .container{
         max-width: 1000px;
         margin: auto;
     }
 
-    .cv{
+    #cv{
         border-color: black;
         border-style: solid;
         border-width: 10px;
-        padding: 30px 40px;
+        padding: 30px;
     }
 
-    header{
+    #title{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
         flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
     }
 
-    header div:first-child {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile-picture{
-        width: 90%;
-        max-width: 400px;
-        margin: 20px;
-    }
-
-    #billbyte_title, #personal_data, #media{
-        margin: 20px;
+    #billbyte{
+        margin: 0px 30px 10px 0px;
     }
 
     #media{
-        display: flex;
-        justify-content: left;
+        margin-bottom: 10px;
     }
 
     #github, #linkedin, #twitter{
-        padding-right: 20px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
-    header div ul{
-        list-style: none;
-        font-style: normal;
-        padding-left: 0px;
-        margin-bottom: 0px;
+    #personal_data{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #personal_data span{
+        margin: 0px 20px 5px 0px;
     }
     
-    @media only screen and (max-width: 900px){
-        .cv{
-            padding: 20px;
+    .profile-picture{
+        width: 90%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    #avatar{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    
+    @media only screen and (max-width: 480px){
+        #cv{
+            padding: 15px;
         }
+        body{
+            padding: 0px;
+        }
+        #title{
+            display: block;
+            text-align: center;
+        }
+        #billbyte{
+            margin-right: 0px;
+        }
+        #personal_data{
+            justify-content: center;
+        }
+        h1{font-size: 32px;}
+
+        h2{font-size: 22px;}
+
+        li{margin-top: 15px; font-size: 12px;}
+
+        p{font-size: 12px; line-height: 1.5;}
+
+        span{font-size: 12px;}
     }

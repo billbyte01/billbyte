@@ -113,6 +113,33 @@
         font-size: 14px;
     }
 
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    .textarea{
+        padding: 10px;
+        border-width: 0px;
+        font-family: Inconsolata, sans-serif;
+        min-height: 20px;
+    }
+
+    #comment{
+        min-height: 100px;
+        vertical-align: top;
+    }
+
+    .button{
+        padding: 10px;
+        border-width: 0px;
+        font-family: Inconsolata, sans-serif;
+        background-color: black;
+        color: white;
+        min-height: 40px;
+    }
+
     @media only screen and (max-width: 768px){
 
     }

@@ -2,7 +2,7 @@
     
     .testing{
         height: 200px;
-        background-color:rgb(255, 244, 185);
+        background-color: lightgoldenrodyellow;
         margin-bottom: 5px!important;
     }
 
@@ -17,7 +17,7 @@
 
     #dark_mode:hover{
         background-color: black;
-        color: rgb(255, 244, 185);
+        color: lightgoldenrodyellow;
         
     }
     
@@ -68,9 +68,21 @@
         text-decoration: none;
     }
 
+    #nav-bar a:hover{
+        color: gold;
+    }
+
     #github, #linkedin, #twitter{
         width: 40px;
         height: 40px;
+    }
+
+    #github:hover{
+        background-color: silver;
+    }
+
+    #twitter:hover{
+        background-color: lightskyblue;
     }
 
     #sm-media{
@@ -119,16 +131,29 @@
         border: 1px solid black;
     }
 
-    .textarea{
+    .field{
         padding: 10px;
         border-width: 0px;
         font-family: Inconsolata, sans-serif;
         min-height: 20px;
     }
 
+    #email{
+        border-top: 1px dashed;
+        border-bottom: 1px dashed;
+    }
+
     #comment{
         min-height: 100px;
-        vertical-align: top;
+    }
+
+    #comment:focus-visible, #email:focus-visible, #name:focus-visible{
+        background-color: lightgoldenrodyellow;
+        outline: 0px;
+    }
+
+    #send-message{
+        cursor: pointer;
     }
 
     .button{
@@ -138,6 +163,10 @@
         background-color: black;
         color: white;
         min-height: 40px;
+    }
+
+    .button:hover{
+        color: gold;
     }
 
     @media only screen and (max-width: 768px){

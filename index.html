@@ -60,9 +60,12 @@
                         <form>
                             <h2>Share your ideas here:</h2>
                             <div class="contact-form">
-                                <input type="text" id="name" class="textarea" value="Name..."></input>
-                                <textarea id="comment" class="textarea" placeholder="Message..." data-validate="[required:true]"></textarea>
-                                <input type="submit" class="button" value="Wyślij"></input>
+                                <input type="text" id="name" class="field" placeholder="Name..." required="required" maxlength="50"></input>
+                                <input type="email" id="email" class="field" placeholder="E-mail..." required="required" maxlength="100"></input>
+                                <textarea id="comment" class="field" placeholder="Message..." required="required" maxlength="1000"></textarea>
+                                <button type="submit" id="send-message" class="button">
+                                    <span>Wyślij</span>
+                                </button>
                             </div>
                         </form>
                     </section>

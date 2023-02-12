@@ -1,4 +1,4 @@
-// WHY NOT TO USE 'var'
+// ---------------------- WHY NOT TO USE 'var' ----------------------
 // function findX(){
 //     var x = 1
 //     {
@@ -10,11 +10,13 @@
 //
 // findX()
 
+
 // UNARY PLUS -- it changes text to number
 // let y = '4'
 // console.log(+y)
 
-// STRING NOT EQUAL 
+
+// ---------------------- STRING NOT EQUAL ----------------------
 // const fruits = ['apple', 'banana', 'grape', 'cherry']
 // if (!fruits.includes('cherry')) {
 //     console.log('cherry is missing')
@@ -22,25 +24,42 @@
 //     console.log('cherry lady')
 // }
 
-// OBJECTS
-const family = [
-    {
-        firstName: 'Emi',
-        lastName: 'Pociecha',
-        age: 33,
-        use_crypto: false
-    },
-    {
-        firstName: 'Sławek',
-        lastName: 'Pociecha',
-        age: 33,
-        use_crypto: true
-    },
-    {
-        firstName: 'Wiola',
-        lastName: 'Pociecha',
-        age: 3,
-        use_crypto: false
-    }
-]
-console.log(family[0].firstName)
+
+// ---------------------- OBJECTS ----------------------
+// const family = [
+//     {
+//         firstName: 'Emi',
+//         lastName: 'Pociecha',
+//         age: 33,
+//         use_crypto: false
+//     },
+//     {
+//         firstName: 'Sławek',
+//         lastName: 'Pociecha',
+//         age: 33,
+//         use_crypto: true
+//     },
+//     {
+//         firstName: 'Wiola',
+//         lastName: 'Pociecha',
+//         age: 3,
+//         use_crypto: false
+//     }
+// ]
+//
+// for (let i = 0; i < family.length; i++) {
+//     if (family[i].use_crypto === true) {
+//         console.log('Good! You are not Fiat Marine!');
+//     } else {
+//         console.log('Oh no! Fiat Marine!');
+//     }
+// }
+
+
+// ---------------------- FUNCTIONS ----------------------
+function sendText(name) {
+    console.log('Why my eyes ya ' + name + '?')
+}
+
+sendText('Cat')
+sendText('Dog')

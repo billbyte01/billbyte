@@ -9,6 +9,7 @@ button.addEventListener('click',(event) => {
     // when in .css file we have .color{background: black;}
 })
 
+// WHY TO NOT USE 'var'
 // function findX(){
 //     var x = 1
 //     {
@@ -17,7 +18,6 @@ button.addEventListener('click',(event) => {
 //     }
 //     console.log('outside: ' + x)
 // }
-
 // findX()
 
 const time = 12;

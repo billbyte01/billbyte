@@ -57,9 +57,9 @@
 
 
 // ---------------------- FUNCTIONS ----------------------
-function sendText(name) {
-    console.log('Why my eyes ya ' + name + '?')
+function sendText(name, time) {
+    console.log('Why my eyes ya ' + name + '? At ' + time)
 }
 
 sendText('Cat')
-sendText('Dog')
+sendText('Dog', 15)

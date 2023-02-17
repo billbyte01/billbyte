@@ -57,9 +57,21 @@
 
 
 // ---------------------- FUNCTIONS ----------------------
-function sendText(name, time) {
-    console.log('Why my eyes ya ' + name + '? At ' + time)
+// function sendText(name, time) {
+//     console.log('Why my eyes ya ' + name + '? At ' + time)
+// }
+
+// sendText('Cat')
+// sendText('Dog', 15)
+
+
+// ---------------------- MOVING BOB ----------------------
+const bob = document.querySelector('.face');
+let count = 0
+
+function moveBob(){
+    count += 50
+    bob.style.left = count + 'px'
 }
 
-sendText('Cat')
-sendText('Dog', 15)
+bob.addEventListener('click', moveBob)

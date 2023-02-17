@@ -2,7 +2,7 @@ let color = 'white';
 
 const button = document.getElementById('dark_mode');
 
-button.addEventListener('click',(event) => {
+button.addEventListener('click', function() {
     // using ternary operators: color = color === 'white' ? 'black' : "white";
     if (color === 'white') {
         color = 'black';

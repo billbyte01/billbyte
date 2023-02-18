@@ -4,9 +4,11 @@
         height: 200px;
         background-color: lightgoldenrodyellow;
         margin-bottom: 5px!important;
+        display: flex;
     }
 
     #dark_mode{
+        position: absolute;
         margin: 10px;
         border-radius: 0;
         border-color: black;
@@ -19,6 +21,14 @@
         background-color: black;
         color: lightgoldenrodyellow;
         
+    }
+
+    .ball {
+        background-color: palevioletred;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        margin: 50px 20px 20px;
     }
     
     h1{font-size: 44px;}

@@ -30,13 +30,13 @@
 //     {
 //         firstName: 'Emi',
 //         lastName: 'Pociecha',
-//         age: 33,
+//         age: 32,
 //         use_crypto: false
 //     },
 //     {
 //         firstName: 'Sławek',
 //         lastName: 'Pociecha',
-//         age: 33,
+//         age: 32,
 //         use_crypto: true
 //     },
 //     {
@@ -77,7 +77,7 @@
 // bob.addEventListener('click', moveBob)
 
 
-// ---------------------- CONECTING VARIABLES BY CONCAT ----------------------
+// ---------------------- CONECTING VARIABLES TO ONE ARRAY BY CONCAT ----------------------
 // const string = "Hello "
 // const string2 = "Marian"
 //
@@ -95,7 +95,7 @@
 // console.log(newArray)
 
 
-// ---------------------- CONECTING VARIABLES BY CONCAT ----------------------
+// ---------------------- JOINING ELEMENTS INTO ONE STRING ----------------------
 // const textDisplay = document.querySelectorAll('.ball')[0]
 //
 // const emotions = ['Happy', 'Sad', 'Confident']
@@ -112,3 +112,31 @@
 // //console.log(emotions2)
 //
 // textDisplay.innerHTML = emotions
+
+
+// ---------------------- REMOVING AN ELEMENT/ELEMENTS AND ADDING A NEW ONE + SEARCHING OCCURRENCE ----------------------
+const ball = document.querySelector('.ball')
+
+const movies = ['Elf', 'Annie', 'Bart', 'Camila', 'Hero', 'Mulan', 'Emily']
+// console.log(movies.length)
+movies.splice(1,2,'Mulan') //removes element from 2 to 3 and add 'Mulan'
+movies.splice(1,0,'Mulan') //only add 'Mulan' before seccond element
+// console.log(movies.length)
+// console.log(movies.indexOf('Mulan')) // find firt occurrence of an element
+// console.log(movies.lastIndexOf('Mulan')) // find last occurrence of an element
+// console.log(movies.indexOf('Mulan', -1))
+console.log(movies)
+
+function find(needle, haystack) {
+    var results = []
+    var idx = haystack.indexOf(needle)
+    while (idx != -1) {
+        results.push(idx)
+        idx = haystack.indexOf(needle, idx + 1)
+    }
+    return results; // returns all occurrences of an elements finded in a given array
+}
+
+console.log(find('Mulan', movies))
+
+ball.innerHTML = movies

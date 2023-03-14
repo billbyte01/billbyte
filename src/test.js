@@ -2,12 +2,12 @@
 // function findX(){
 //     var x = 1
 //     {
-//         let x = 2
+//         var x = 2
 //         console.log('inside: ' + x)
 //     }
 //     console.log('outside: ' + x)
 // }
-//
+
 // findX()
 
 
@@ -115,28 +115,40 @@
 
 
 // ---------------------- REMOVING AN ELEMENT/ELEMENTS AND ADDING A NEW ONE + SEARCHING OCCURRENCE ----------------------
-const ball = document.querySelector('.ball')
+// const ball = document.querySelector('.ball')
 
-const movies = ['Elf', 'Annie', 'Bart', 'Camila', 'Hero', 'Mulan', 'Emily']
-// console.log(movies.length)
-movies.splice(1,2,'Mulan') //removes element from 2 to 3 and add 'Mulan'
-movies.splice(1,0,'Mulan') //only add 'Mulan' before seccond element
-// console.log(movies.length)
-// console.log(movies.indexOf('Mulan')) // find firt occurrence of an element
-// console.log(movies.lastIndexOf('Mulan')) // find last occurrence of an element
-// console.log(movies.indexOf('Mulan', -1))
-console.log(movies)
+// const movies = ['Elf', 'Annie', 'Bart', 'Camila', 'Hero', 'Mulan', 'Emily']
+// // console.log(movies.length)
+// movies.splice(1,2,'Mulan') //removes element from 2 to 3 and add 'Mulan'
+// movies.splice(1,0,'Mulan') //only add 'Mulan' before seccond element
+// // console.log(movies.length)
+// // console.log(movies.indexOf('Mulan')) // find firt occurrence of an element
+// // console.log(movies.lastIndexOf('Mulan')) // find last occurrence of an element
+// // console.log(movies.indexOf('Mulan', -1))
+// console.log(movies)
 
-function find(needle, haystack) {
-    var results = []
-    var idx = haystack.indexOf(needle)
-    while (idx != -1) {
-        results.push(idx)
-        idx = haystack.indexOf(needle, idx + 1)
-    }
-    return results; // returns all occurrences of an elements finded in a given array
-}
+// function find(needle, haystack) {
+//     var results = []
+//     var idx = haystack.indexOf(needle)
+//     while (idx != -1) {
+//         results.push(idx)
+//         idx = haystack.indexOf(needle, idx + 1)
+//     }
+//     return results; // returns all occurrences of an elements finded in a given array
+// }
 
-console.log(find('Mulan', movies))
+// console.log(find('Mulan', movies))
 
-ball.innerHTML = movies
+// ball.innerHTML = movies
+
+
+// ---------------------- CHANGING ALL SELECTED ELEMENTS - forEach ----------------------
+// const balls = document.querySelectorAll('.ball')
+// console.log(balls)
+// balls.forEach(ball => ball.style.backgroundColor = 'green')
+
+// const names = ['Emi','Wiola','Don']
+// names.forEach(name => console.log(name))
+
+// const scores = [12, 43, 23, 55, 33, 22]
+// scores.forEach(score => console.log(score + 2))

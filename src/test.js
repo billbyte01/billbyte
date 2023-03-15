@@ -152,3 +152,34 @@
 
 // const scores = [12, 43, 23, 55, 33, 22]
 // scores.forEach(score => console.log(score + 2))
+
+
+// ---------------------- CHECKING ALL SELECTED ELEMENTS - some ----------------------
+// const scores = [
+//     {
+//         name: 'Emi',
+//         age: 23
+//     },
+//     {
+//         name: 'Leo',
+//         age: 56
+//     },
+//     {
+//         name: 'Wil',
+//         age: 65
+//     },
+//     {
+//         name: 'Los',
+//         age: 33
+//     },
+// ]
+
+// console.log(scores.some(score => score.age > 60)) // true
+
+// const balls = Array.from(document.querySelectorAll('.ball')) // Array.from creates an array from these elements
+
+// console.log(balls)
+
+// const isBallBroken = balls.some(ball => ball.hasChildNodes()) // we check here if there is a child node in any .ball div
+
+// console.log(isBallBroken) //true

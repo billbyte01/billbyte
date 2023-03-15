@@ -23,12 +23,23 @@
         
     }
 
-    .ball {
+    .ball{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: palevioletred;
         height: 100px;
         width: 100px;
         border-radius: 50px;
         margin: 50px 20px 20px;
+    }
+
+    .hole{
+        transform: matrix(50%, 50%);
+        background-color: black;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
     }
     
     h1{font-size: 44px;}

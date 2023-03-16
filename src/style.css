@@ -35,7 +35,6 @@
     }
 
     .hole{
-        transform: matrix(50%, 50%);
         background-color: black;
         height: 20px;
         width: 20px;

@@ -142,7 +142,7 @@
 // ball.innerHTML = movies
 
 
-// ---------------------- CHANGING ALL SELECTED ELEMENTS - forEach ----------------------
+// ---------------------- CHANGING ALL SELECTED ELEMENTS - 'forEach' ----------------------
 // const balls = document.querySelectorAll('.ball')
 // console.log(balls)
 // balls.forEach(ball => ball.style.backgroundColor = 'green')
@@ -154,7 +154,7 @@
 // scores.forEach(score => console.log(score + 2))
 
 
-// ---------------------- CHECKING ALL SELECTED ELEMENTS - some ----------------------
+// ---------------------- CHECKING ALL SELECTED ELEMENTS - 'some' ----------------------
 // const scores = [
 //     {
 //         name: 'Emi',
@@ -183,3 +183,39 @@
 // const isBallBroken = balls.some(ball => ball.hasChildNodes()) // we check here if there is a child node in any .ball div
 
 // console.log(isBallBroken) //true
+
+
+// ---------------------- 'map' - works like 'forEach' but create a new array ----------------------
+// const ages = [
+//     {
+//         name: 'Ola',
+//         age: 12
+//     },
+//     {
+//         name: 'Can',
+//         age: 14
+//     },
+//     {   
+//         name: 'Leo',
+//         age: 23
+//     }
+// ]
+
+// console.log(ages)
+
+// const newAges = ages.map(user => user.age + 5)
+
+// console.log(newAges)
+
+
+// ---------------------- 'filter' - create a new array for elements meeting the condition ----------------------
+
+// const shoes = ['botki', 'adidasy', 'pantofle', 'sandały']
+
+// const shortShoes = shoes.filter(shoe => shoe.length <= 7)
+
+// console.log(shortShoes)
+
+// const showBall = document.querySelectorAll('.ball')[1]
+
+// showBall.innerHTML = shortShoes 

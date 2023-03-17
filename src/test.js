@@ -210,12 +210,12 @@
 
 // ---------------------- 'filter' - create a new array for elements meeting the condition ----------------------
 
-// const shoes = ['botki', 'adidasy', 'pantofle', 'sandały']
+const shoes = ['botki', 'adidasy', 'pantofle', 'sandały']
 
-// const shortShoes = shoes.filter(shoe => shoe.length <= 7)
+const shortShoes = shoes.filter(shoe => shoe.length <= 7)
 
-// console.log(shortShoes)
+console.log(shortShoes)
 
-// const showBall = document.querySelectorAll('.ball')[1]
+const showBall = document.querySelectorAll('.ball')[1]
 
-// showBall.innerHTML = shortShoes 
+showBall.innerHTML = shortShoes 

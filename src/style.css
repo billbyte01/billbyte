@@ -1,47 +1,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
-    
-    .testing{
-        height:200px;
-        background-color:lightgoldenrodyellow;
-        margin-bottom:5px!important;
-        display:flex;
-    }
 
     #dark_mode{
         position:absolute;
         margin:10px;
-        border-radius:0;
-        border-color:black;
-        background-color:transparent;
-        font-family:Inconsolata, sans-serif;
-        font-size:20px;
-    }
-
-    #dark_mode:hover{
         background-color:black;
         color:lightgoldenrodyellow;
-        
-    }
-
-    .ball{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        background-color:goldenrod;
-        height:100px;
-        width:100px;
-        border-radius:50px;
-        margin:50px 20px 20px;
-        white-space:wrap;
-	    overflow:visible;
-	    text-overflow:ellipsis;
-    }
-
-    .hole{
-        background-color:black;
-        height:20px;
-        width:20px;
-        border-radius:50px;
+        font-family:Inconsolata, sans-serif;
+        font-size:20px;
     }
     
     h1{font-size:44px;}

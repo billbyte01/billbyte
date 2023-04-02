@@ -131,11 +131,12 @@
         border-bottom:1px dashed;
     }
 
-    #comment{
+    #msg{
         min-height:100px;
+        resize: vertical;
     }
 
-    #comment:focus-visible, #email:focus-visible, #name:focus-visible{
+    #msg:focus-visible, #email:focus-visible, #name:focus-visible{
         background-color:lightgoldenrodyellow;
         outline:0px;
     }
@@ -155,6 +156,26 @@
 
     .button:hover{
         color:gold;
+    }
+
+    .msg-status{
+        display: none;
+    }
+
+    .success{
+        display: flex;
+        background-color: greenyellow;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+    }
+
+    .error{
+        display: flex;
+        background-color: gold;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
     }
 
     @media only screen and (max-width:768px){

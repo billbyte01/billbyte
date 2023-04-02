@@ -54,17 +54,18 @@
                         </ul>
                     </section>
                     <section>
-                        <form>
+                        <form action='src/mail.php' method='post'>
                             <h2>Share your ideas here:</h2>
                             <div class='contact-form'>
-                                <input type='text' id='name' class='field' placeholder='Name...' required='required' maxlength='50'></input>
-                                <input type='email' id='email' class='field' placeholder='E-mail...' required='required' maxlength='100'></input>
-                                <textarea id='comment' class='field' placeholder='Message...' required='required' maxlength='1000'></textarea>
+                                <input type='text' id='name' name='name' class='field' placeholder='Name...' required='required' maxlength='50'></input>
+                                <input type='email' id='email' name='email' class='field' placeholder='E-mail...' required='required' maxlength='100'></input>
+                                <textarea id='msg' name='msg' class='field' placeholder='Message...' required='required' maxlength='1000'></textarea>
                                 <button type='submit' id='send-message' class='button'>
                                     <span>Wyślij</span>
                                 </button>
                             </div>
                         </form>
+                        <p class='msg-status'>Test announcement</p>
                     </section>
                 </main>
             </div>
@@ -75,6 +76,5 @@
             </div>
         </div>
         <script src='src/app.js'></script>
-        <script src='src/test.js'></script>
     </body>
 </html>

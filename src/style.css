@@ -43,7 +43,7 @@
         justify-content:space-between;
     }
 
-    #nav-bar{
+    #nav-bar {
         display:flex;
         min-height:40px;
     }
@@ -58,6 +58,17 @@
 
     #nav-bar a:hover{
         color:gold;
+    }
+
+    .hamburger{
+        border: 0;
+        background-color: transparent;
+    }
+
+    #menu_hamburger{
+        display: none;
+        width:30px;
+        height:30px;
     }
 
     #github, #linkedin, #twitter{
@@ -178,11 +189,11 @@
         height: 20px;
     }
 
-    @media only screen and (max-width:768px){
+    @media only screen and (max-width:800px){
 
     }
-    
-    @media only screen and (max-width:480px){
+
+    @media only screen and (max-width:550px){
         
         h1{font-size:32px;}
 
@@ -197,4 +208,8 @@
         #cv{padding:15px;}        
 
         #areas li{font-size:12px;}
+
+        #nav-bar{display:none;}
+
+        .hamburger{display:flex;}
     }
